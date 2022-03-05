@@ -1,0 +1,1118 @@
+[
+    {
+        "id": "8fb8f6f86b6426f4",
+        "type": "tab",
+        "label": "Flow 4",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "78519359320c165a",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "ab5fa5f1240105b3",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "e626c101adf9a820",
+        "type": "tab",
+        "label": "Flow 3",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "c1e14e224737a35e",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "3a15a9c9dbe9a80a",
+        "type": "ui_tab",
+        "name": "Tab 1",
+        "icon": "",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "121e2bf07dda136a",
+        "type": "ui_group",
+        "name": "temp-disp",
+        "tab": "3a15a9c9dbe9a80a",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d8596899.c56458",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "ca2272c3.e8396",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "985ecbc7.67a138",
+        "type": "websocket-listener",
+        "z": "ab5fa5f1240105b3",
+        "path": "/ws/simple",
+        "wholemsg": "false"
+    },
+    {
+        "id": "7dada94e89ff06e4",
+        "type": "ui_link",
+        "name": "Link 2",
+        "icon": "open_in_browser",
+        "target": "newtab",
+        "order": 2
+    },
+    {
+        "id": "5af14c6e.d86604",
+        "type": "ui_group",
+        "name": "Compte à rebours",
+        "tab": "7560e5e8.ee7dfc",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "7560e5e8.ee7dfc",
+        "type": "ui_tab",
+        "name": "Préhension SELFIT",
+        "icon": "dashboard",
+        "order": 4,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "fcd5cb3df6856d47",
+        "type": "MySQLdatabase",
+        "name": "",
+        "host": "127.0.0.1",
+        "port": "3306",
+        "db": "table",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "4ea629c0ccc510bd",
+        "type": "http request",
+        "z": "8fb8f6f86b6426f4",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "body",
+        "url": "http://192.168.2.6",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 270,
+        "y": 160,
+        "wires": [
+            [
+                "13be909f7b53e3f2"
+            ]
+        ]
+    },
+    {
+        "id": "ba4bd9db18c0d263",
+        "type": "debug",
+        "z": "8fb8f6f86b6426f4",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 690,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "13be909f7b53e3f2",
+        "type": "html",
+        "z": "8fb8f6f86b6426f4",
+        "name": "",
+        "property": "payload",
+        "outproperty": "payload",
+        "tag": "span",
+        "ret": "html",
+        "as": "single",
+        "x": 430,
+        "y": 160,
+        "wires": [
+            [
+                "7941ab0067e55878"
+            ]
+        ]
+    },
+    {
+        "id": "7941ab0067e55878",
+        "type": "function",
+        "z": "8fb8f6f86b6426f4",
+        "name": "",
+        "func": "return{ payload:msg.payload[1]} ;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 240,
+        "wires": [
+            [
+                "07f091a2c93fb769",
+                "ba4bd9db18c0d263"
+            ]
+        ]
+    },
+    {
+        "id": "07f091a2c93fb769",
+        "type": "ui_gauge",
+        "z": "8fb8f6f86b6426f4",
+        "name": "",
+        "group": "121e2bf07dda136a",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "gauge",
+        "label": "degree celsius",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 710,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "bcf089c2d29c3623",
+        "type": "comment",
+        "z": "8fb8f6f86b6426f4",
+        "name": "temperature dashboard",
+        "info": "Picks up temperature from website ( created by Aurdino ) and displays in gauge",
+        "x": 220,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "9e4b75ada2e24a96",
+        "type": "inject",
+        "z": "8fb8f6f86b6426f4",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 160,
+        "wires": [
+            [
+                "4ea629c0ccc510bd"
+            ]
+        ]
+    },
+    {
+        "id": "17808aef3dc94114",
+        "type": "http in",
+        "z": "78519359320c165a",
+        "d": true,
+        "name": "",
+        "url": "/entered_values",
+        "method": "post",
+        "upload": true,
+        "swaggerDoc": "",
+        "x": 140,
+        "y": 740,
+        "wires": [
+            [
+                "b21c3385d1fcfe3c",
+                "b4fb846af926fce4"
+            ]
+        ]
+    },
+    {
+        "id": "5ecdf4d9e7d5ae38",
+        "type": "bcrypt",
+        "z": "78519359320c165a",
+        "name": "entered-pwd-verify",
+        "action": "verify",
+        "field": "payload.pwd",
+        "hash": "topic",
+        "rounds": 10,
+        "x": 550,
+        "y": 800,
+        "wires": [
+            [
+                "6121a81744545087",
+                "272a39b71eb5af47"
+            ]
+        ],
+        "info": "return{payload."
+    },
+    {
+        "id": "b21c3385d1fcfe3c",
+        "type": "debug",
+        "z": "78519359320c165a",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 370,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "b4fb846af926fce4",
+        "type": "change",
+        "z": "78519359320c165a",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "$2a$10$nTaeXzQ/PRe4L54rs9aIiO3lm0DoTJTv1UaNMtpayjyR.RYfpd9f6",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 330,
+        "y": 800,
+        "wires": [
+            [
+                "5ecdf4d9e7d5ae38"
+            ]
+        ]
+    },
+    {
+        "id": "6121a81744545087",
+        "type": "debug",
+        "z": "78519359320c165a",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 750,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "272a39b71eb5af47",
+        "type": "change",
+        "z": "78519359320c165a",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "input1",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 750,
+        "y": 840,
+        "wires": [
+            [
+                "eae8d6d478a08793"
+            ]
+        ]
+    },
+    {
+        "id": "c4032a63d034e3a4",
+        "type": "comment",
+        "z": "78519359320c165a",
+        "name": "Password -verification",
+        "info": "Here the password entered by the user is verified against the password set and finally a go is given",
+        "x": 220,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "eee76fc0476fdfec",
+        "type": "function",
+        "z": "78519359320c165a",
+        "d": true,
+        "name": "call-dashboard",
+        "func": "//var success;\n\n//var check;\n//check=msg.match;\n\n// since msg.match returns boolean, just compare it with true or false. DOnt put it in quotes.\n//import { createRequire } from 'module';\n//const require = createRequire(import.meta.url);\n<script src=\"https://requirejs.org/docs/release/2.3.5/minified/require.js\"></script>\n\nvar redirect = function(){\n   window.location.href = \"https://www.google.com\";\n}\nvar msg1\nvar msg2\n\nif ( msg.match === false )\n{ \n    msg1 = { payload:\" Login Failed\" }; \n    //return [msg1,null];\n    const open = require('open')\n    await open('http://sindresorhus.com')\n}\nelse\nif ( msg.match === true )\n{\n msg1 = { payload:\" Login Successful\" };\n msg2 = { payload: msg.payload.input2};\n //const open = require('open')\n //await open('http://www.google.com')\n \n const open = require('open');\n\n await open('https://google.com', {\n\tapp: {\n\t\tname: open.apps.chrome\n\t}\n});\n //redirect();\n //const open = require('open');\n \n//(async () => {\n    // Opens the image in the default image viewer and waits for the opened app to quit.\n   // await open('unicorn.png', {wait: true});\n    //console.log('The image viewer app quit');\n \n    // Opens the URL in the default browser.\n  //  await open('http://192.168.2.9:1880/ui');\n \n    // Opens the URL in a specified browser.\n    //await open('https://sindresorhus.com', {app: 'firefox'});\n \n    // Specify app arguments.\n    //await open('https://sindresorhus.com', {app: ['google chrome', '--incognito']});\n//})();\n   //return [msg1,msg2];\n}\n\n",
+        "outputs": 2,
+        "noerr": 5,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nconst open = require('open');\n\n await open('https://google.com', {\n\tapp: {\n\t\tname: open.apps.chrome\n\t}\n});",
+        "finalize": "",
+        "libs": [],
+        "x": 900,
+        "y": 1020,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "939cd6b7e6e69f04",
+        "type": "change",
+        "z": "78519359320c165a",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "input2",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 830,
+        "y": 940,
+        "wires": [
+            [
+                "eae8d6d478a08793"
+            ]
+        ]
+    },
+    {
+        "id": "a95002e0369618e6",
+        "type": "inject",
+        "z": "78519359320c165a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.2",
+        "topic": "",
+        "payload": "http://192.168.2.9:1880/ui",
+        "payloadType": "str",
+        "x": 670,
+        "y": 940,
+        "wires": [
+            [
+                "939cd6b7e6e69f04"
+            ]
+        ]
+    },
+    {
+        "id": "0c53ee522b3bf12a",
+        "type": "debug",
+        "z": "78519359320c165a",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1390,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "77a2779bce4d2470",
+        "type": "link out",
+        "z": "78519359320c165a",
+        "name": "",
+        "mode": "link",
+        "links": [
+            "75fdd31345cc462e",
+            "d2838f04c31763aa",
+            "3aec8e7c24465399",
+            "fae07853b44f6a75",
+            "b91bb3df55ae3c6e",
+            "2aad51cfe22bf05a"
+        ],
+        "x": 1265,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "eae8d6d478a08793",
+        "type": "join",
+        "z": "78519359320c165a",
+        "name": "",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": true,
+        "timeout": "",
+        "count": "2",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 950,
+        "y": 780,
+        "wires": [
+            [
+                "6027c6434dfc318c"
+            ]
+        ]
+    },
+    {
+        "id": "6027c6434dfc318c",
+        "type": "debug",
+        "z": "78519359320c165a",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1110,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "8d351d455293c152",
+        "type": "nbrowser",
+        "z": "78519359320c165a",
+        "name": "UI",
+        "methods": [
+            {
+                "name": "gotoURL",
+                "func": "goto",
+                "params": [
+                    {
+                        "type": "msg",
+                        "value": "payload",
+                        "typeDefault": "str"
+                    }
+                ]
+            }
+        ],
+        "prop": "nbrowser",
+        "propout": "payload",
+        "object": "msg",
+        "objectout": "msg",
+        "close": false,
+        "show": true,
+        "ssl": false,
+        "outputs": 1,
+        "x": 1190,
+        "y": 1080,
+        "wires": [
+            [
+                "7e46c50a546f86b0"
+            ]
+        ]
+    },
+    {
+        "id": "7e46c50a546f86b0",
+        "type": "debug",
+        "z": "78519359320c165a",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1330,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "7fdc296f24a3c6af",
+        "type": "http request",
+        "z": "78519359320c165a",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://192.168.2.9:1880/ui",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 1230,
+        "y": 920,
+        "wires": [
+            [
+                "1044c9682041781f",
+                "0c53ee522b3bf12a"
+            ]
+        ]
+    },
+    {
+        "id": "1044c9682041781f",
+        "type": "http response",
+        "z": "78519359320c165a",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1430,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "9c8879d53daa3026",
+        "type": "template",
+        "z": "78519359320c165a",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<!DOCTYPE html>\n<html>\n<body>\n\n<h1>The form method=\"post\" attribute</h1>\n\n<form action=\"/entered_values\" method=\"post\" target=\"checking\">\n  <label for=\"uname\">User name:</label>\n  <input type=\"text\" id=\"uname\" name=\"uname\"><br><br>\n  <label for=\"pwd\">Password:</label>\n  <input type=\"text\" id=\"pwd\" name=\"pwd\"><br><br>\n  <input type=\"submit\" value=\"Submit\">\n</form>\n\n<p>Click on the submit button, and the form will be submittied using the POST method.</p>\n\n</body>\n</html>\n",
+        "output": "str",
+        "x": 420,
+        "y": 400,
+        "wires": [
+            [
+                "d8f9df0080dbe7c5"
+            ]
+        ]
+    },
+    {
+        "id": "afbedcc859e6b541",
+        "type": "http in",
+        "z": "78519359320c165a",
+        "d": true,
+        "name": "",
+        "url": "/login",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 140,
+        "y": 400,
+        "wires": [
+            [
+                "9c8879d53daa3026"
+            ]
+        ]
+    },
+    {
+        "id": "d8f9df0080dbe7c5",
+        "type": "http response",
+        "z": "78519359320c165a",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 590,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "7d69dd478d5a85e4",
+        "type": "comment",
+        "z": "78519359320c165a",
+        "name": "Login page - using /entered_values",
+        "info": "In this page, the user can input user name and password which get directed to /entered_values page\nthe username and password are read from the /entered_values web page using post command. THis works with password verification flow where the password is verified against the encrypted set password.",
+        "x": 340,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "ecf89eb6e7d14c7e",
+        "type": "inject",
+        "z": "78519359320c165a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "$2a$10$nTaeXzQ/PRe4L54rs9aIiO3lm0DoTJTv1UaNMtpayjyR.RYfpd9f6",
+        "payload": "payload",
+        "payloadType": "msg",
+        "x": 130,
+        "y": 1060,
+        "wires": [
+            [
+                "29e6b400daca17ed"
+            ]
+        ]
+    },
+    {
+        "id": "29e6b400daca17ed",
+        "type": "bcrypt",
+        "z": "78519359320c165a",
+        "name": "generate",
+        "action": "encrypt",
+        "field": "payload",
+        "hash": "topic",
+        "rounds": 10,
+        "x": 320,
+        "y": 1060,
+        "wires": [
+            [
+                "0aa7a43d7de52ae0"
+            ]
+        ]
+    },
+    {
+        "id": "0aa7a43d7de52ae0",
+        "type": "debug",
+        "z": "78519359320c165a",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "match",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 530,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "9c4f8f2e65b7c584",
+        "type": "comment",
+        "z": "78519359320c165a",
+        "name": "password generation and verification",
+        "info": "The below flow, is used to generate the hashed password and then verify it with the user entered password.\nThe reference hashed password is given in message.topic which then gets injected into the brypt node.\nThe password entered should be given in the msg.payload section of the inject node.\nBcrypt compares the payload value ( plain password ) with the salted and hashed password in topic and gives true or false\nthe result should be checked in msg.match of the dbug node.",
+        "x": 400,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "12ed2375ad493029",
+        "type": "comment",
+        "z": "78519359320c165a",
+        "name": "login page -using script in html and opening dashboard",
+        "info": "This flow, startes from the login page, compares the username and password and loads the dashboard if matched. \nDoes not use password encryption and reads the data entered int he form in html directly without sending to any other file or any web page\nDisadvantage of this method is everything is done in html and can be seen by the user\n",
+        "x": 260,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "6dcb140f236e6bcb",
+        "type": "http in",
+        "z": "78519359320c165a",
+        "name": "",
+        "url": "/login",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 65,
+        "y": 137,
+        "wires": [
+            [
+                "b9867b7c46220f5f"
+            ]
+        ]
+    },
+    {
+        "id": "7dd3bbd94d4363a4",
+        "type": "http response",
+        "z": "78519359320c165a",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 495,
+        "y": 137,
+        "wires": []
+    },
+    {
+        "id": "b9867b7c46220f5f",
+        "type": "template",
+        "z": "78519359320c165a",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<!DOCTYPE html>\n<html>\n<body>\n<center>\n\n<h1> Login Page  </h1>\n\n<form action=\"\" id=\"signup\">\n  <label for=\"uname\">User name:</label>\n  <input type=\"text\" id=\"uname\" name=\"uname\"><br><br>\n  <label for=\"pwd\">Password:</label>\n  <input type=\"text\" id=\"pwd\" name=\"pwd\"><br><br>\n  <!--<input type=\"submit\" value=\"Submit\"> -->\n</form>\n\n<button onclick=\"myFunction()\">Submit</button>\n\n<p id=\"demo\"></p>\n\n<script>\nfunction myFunction() {\n  const form=document.getElementById(\"signup\");\n  var usrn=\"\", pwd=\"\";\n  usrn = form.elements['uname'];\n  pwd = form.elements['pwd'];\n \n  //document.getElementById(\"demo\").innerHTML = pwd.value;\n  if ( (usrn.value == \"nk\")&&(pwd.value == \"login\"))\n  {\n      document.getElementById(\"demo\").innerHTML = \"Login Successful\";\n      //window.open(\"https://www.w3schools.com\",\"_self\");\n      window.open(\"http://192.168.2.9:1880/ui\",\"_self\");\n  }\n  else\n  {\n      document.getElementById(\"demo\").innerHTML = \"Login Failed\";\n  }\n}\n</script>\n</center>\n\n</body>\n</html>\n",
+        "output": "str",
+        "x": 314,
+        "y": 136,
+        "wires": [
+            [
+                "7dd3bbd94d4363a4"
+            ]
+        ]
+    },
+    {
+        "id": "10c299ee.1efcee",
+        "type": "exec",
+        "z": "ab5fa5f1240105b3",
+        "command": "start chrome",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "open Website in browser   ",
+        "x": 530,
+        "y": 180,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "dff7108b.c7aa28",
+        "type": "change",
+        "z": "ab5fa5f1240105b3",
+        "name": "set Website",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "https://www.google.com",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 310,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "de0f7e4c.f12cb",
+        "type": "inject",
+        "z": "ab5fa5f1240105b3",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 180,
+        "wires": [
+            [
+                "dff7108b.c7aa28"
+            ]
+        ]
+    },
+    {
+        "id": "2aad51cfe22bf05a",
+        "type": "link in",
+        "z": "ab5fa5f1240105b3",
+        "name": "",
+        "links": [
+            "a9c248c1487f688b",
+            "77a2779bce4d2470"
+        ],
+        "x": 355,
+        "y": 260,
+        "wires": [
+            [
+                "10c299ee.1efcee"
+            ]
+        ]
+    },
+    {
+        "id": "18a109d5d816ab62",
+        "type": "file in",
+        "z": "e626c101adf9a820",
+        "name": "",
+        "filename": "action.php",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 350,
+        "y": 220,
+        "wires": [
+            [
+                "33d4f09f578d8b77"
+            ]
+        ]
+    },
+    {
+        "id": "b9b8d9d68ceb57db",
+        "type": "http in",
+        "z": "e626c101adf9a820",
+        "d": true,
+        "name": "",
+        "url": "/login",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 120,
+        "y": 100,
+        "wires": [
+            [
+                "429676b2937de4c2"
+            ]
+        ]
+    },
+    {
+        "id": "e3815457afc8a58c",
+        "type": "http response",
+        "z": "e626c101adf9a820",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 550,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "429676b2937de4c2",
+        "type": "template",
+        "z": "e626c101adf9a820",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<!DOCTYPE html>\n<html>\n<body>\n\n<h1>The form method=\"post\" attribute</h1>\n\n<form action=\"/action.php\" method=\"post\" target=\"checking\">\n  <label for=\"uname\">User name:</label>\n  <input type=\"text\" id=\"uname\" name=\"uname\"><br><br>\n  <label for=\"pwd\">Password:</label>\n  <input type=\"text\" id=\"pwd\" name=\"pwd\"><br><br>\n  <input type=\"submit\" value=\"Submit\">\n</form>\n\n<p>Click on the submit button, and the form will be submittied using the POST method.</p>\n\n</body>\n</html>\n",
+        "output": "str",
+        "x": 340,
+        "y": 100,
+        "wires": [
+            [
+                "e3815457afc8a58c"
+            ]
+        ]
+    },
+    {
+        "id": "33d4f09f578d8b77",
+        "type": "debug",
+        "z": "e626c101adf9a820",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 550,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "29e4a27fa12a1c19",
+        "type": "mysql",
+        "z": "e626c101adf9a820",
+        "mydb": "fcd5cb3df6856d47",
+        "name": "table",
+        "x": 270,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9c73e6bc1017d840",
+        "type": "sqlite",
+        "z": "e626c101adf9a820",
+        "sqlquery": "msg.topic",
+        "sql": "",
+        "name": "",
+        "x": 90,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    }
+]
