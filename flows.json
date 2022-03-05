@@ -339,14 +339,14 @@
                 "vt": "str"
             }
         ],
-        "repeat": "1",
+        "repeat": "",
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 110,
+        "x": 100,
         "y": 160,
         "wires": [
             [
@@ -873,6 +873,7 @@
         "id": "6dcb140f236e6bcb",
         "type": "http in",
         "z": "78519359320c165a",
+        "d": true,
         "name": "",
         "url": "/login",
         "method": "get",
