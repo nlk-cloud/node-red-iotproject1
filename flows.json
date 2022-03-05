@@ -1089,30 +1089,5 @@
         "x": 550,
         "y": 220,
         "wires": []
-    },
-    {
-        "id": "29e4a27fa12a1c19",
-        "type": "mysql",
-        "z": "e626c101adf9a820",
-        "mydb": "fcd5cb3df6856d47",
-        "name": "table",
-        "x": 270,
-        "y": 320,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "9c73e6bc1017d840",
-        "type": "sqlite",
-        "z": "e626c101adf9a820",
-        "sqlquery": "msg.topic",
-        "sql": "",
-        "name": "",
-        "x": 90,
-        "y": 340,
-        "wires": [
-            []
-        ]
     }
 ]
